@@ -24,6 +24,11 @@ namespace FollowPath
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 4, pictureBox1.Location.Y);
                 await Task.Delay(50);
             }
+            for (int i = 0; i < 20; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 4);
+                await Task.Delay(50);
+            }
         }
     }
 }
